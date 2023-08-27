@@ -1,0 +1,107 @@
+.top-bar {
+  background-color: aqua;
+  height: var(--top-bar-height);
+  margin: 0px;
+}
+
+.side-bar {
+  position: relative;
+  width: 80px;
+  height: var(--main-height);
+  float: left;
+  background-color: aquamarine;
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.side-bar:hover {
+  width: 200px;
+}
+
+.side-bar li a {
+  display: flex;
+  align-items: center;
+  text-align: right;
+  white-space: nowrap;
+}
+.side-bar li a span {
+  /* opacity: 0; */
+  transition: 0.5s;
+}
+.side-bar li a img {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+}
+
+.weekend div {
+  float: left;
+  position: relative;
+  left: 10px;
+  margin: 1vw;
+  top: 10px;
+  width: 7vw;
+  height: 60vh;
+  background-color: brown;
+}
+.weekend {
+  position: relative;
+  top: 5vh;
+  left: 5vw;
+}
+.right-menu {
+  /* margin-right: 5vw; */
+  background-color: antiquewhite;
+  float: left;
+  /* width: 20vw; */
+  overflow: hidden;
+  width: 20vw;
+  position: relative;
+  padding: 10px;
+}
+.money {
+  position: relative;
+  height: 45vh;
+  overflow: hidden;
+  width: 100%;
+  display: block;
+  background-color: burlywood;
+}
+.ranking {
+  position: relative;
+  overflow: hidden;
+  height: 45vh;
+  width: 100%;
+  display: block;
+  background-color: bisque;
+}
+.main {
+  position: relative;
+  background-color: beige;
+  height: var(--main-height);
+  width: 70vw;
+  float: left;
+}
+:root {
+  --top-bar-height: 10vh;
+  --main-height: 90vh;
+}
+header {
+  margin: 0px;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}

@@ -1,0 +1,47 @@
+.topbar {
+  font-size: 30px;
+  color: blue;
+  padding: 8px;
+  /* text-align: center; */
+  flex: auto;
+}
+a {
+  text-decoration-line: none;
+}
+a:visited {
+  color: black;
+}
+body {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.main {
+  background-color: #c7e8f3;
+  width: auto;
+  height: 400px;
+  /* padding: 10px; */
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+.bottom {
+  text-align: start;
+  margin-right: 400px;
+  /* padding: 10px; */
+}
+
+#algopa {
+  font-weight: bold;
+}
+#login {
+  font-size: 35px;
+  align-items: end;
+  float: right;
+  margin-right: 50px;
+}
+
+#topbar_li {
+  list-style: none;
+}
+.hidden {
+  display: none;
+}
