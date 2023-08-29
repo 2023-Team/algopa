@@ -1,0 +1,44 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#header {
+  background-color: antiquewhite;
+  height: 10vh;
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  gap: 12px;
+}
+
+#header > * {
+  background-color: aquamarine;
+}
+#logo {
+  width: 100px;
+}
+
+#content {
+  padding: 50px;
+  background-color: cadetblue;
+  flex-grow: 0;
+}
+#topbar-menu {
+  flex-grow: 1;
+}
+#main {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+#footer {
+  background-color: tomato;
+  flex-basis: 5vh;
+}
+body {
+  margin: 0px;
+}

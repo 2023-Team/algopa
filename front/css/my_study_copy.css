@@ -1,107 +1,192 @@
-.top-bar {
-  background-color: aqua;
-  height: var(--top-bar-height);
-  margin: 0px;
+:root {
+  --body-width-: 1440px;
+  --body-height-: 760px;
 }
 
-.side-bar {
+body {
+  width: var(--body-width-);
+  margin: 0 auto;
+  height: 100%;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+#top-bar {
+  height: calc(var(--body-width-) * 0.06);
+  width: var(--body-width-);
+  background-color: antiquewhite;
   position: relative;
-  width: 80px;
-  height: var(--main-height);
-  float: left;
-  background-color: aquamarine;
-  overflow: hidden;
-  transition: 0.5s;
-  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#top-bar > div {
+  /* clear: both; */
+  /* float: left; */
+  display: flex;
+  flex-direction: row;
+  /* flex-direction: ; */
+}
+#top-bar > div {
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  justify-content: space-between;
+}
+#top-menu {
+  background-color: lightblue;
+  margin-left: 20px;
+}
+#top-menu > div {
+  display: inline;
+  background-color: blueviolet;
+  margin: 5px;
+  vertical-align: middle;
+}
+#logo {
+  font-size: 24px;
+}
+#top-right {
+  /* display: flex; */
+  background-color: lightblue;
+  margin-right: 20px;
 }
 
-.side-bar:hover {
+#top-right > div {
+  display: inline;
+  background-color: blueviolet;
+  margin: 5px;
+  vertical-align: middle;
+}
+
+#login {
+  font-size: 24px;
+}
+#main {
+  display: flex;
+}
+#side-bar {
+  float: left;
+  width: 80px;
+  height: 100%;
+  background-color: bisque;
+  transition: 0.5s;
+  /* position: ; */
+  position: relative;
+  height: calc(100vh - (var(--body-width-) * 0.06));
+  flex-direction: column;
+  display: flex;
+}
+
+#side-bar:hover {
   width: 200px;
 }
 
-.side-bar li a {
+#side-bar > div {
+  clear: both;
+  width: 60px;
+  margin: 10px;
+  height: 60px;
+  background-color: aqua;
+  /* overflow: hidden; */
   display: flex;
   align-items: center;
-  text-align: right;
-  white-space: nowrap;
 }
-.side-bar li a span {
-  /* opacity: 0; */
-  transition: 0.5s;
-}
-.side-bar li a img {
+#side-bar > div > img {
   width: 60px;
   height: 60px;
+  object-fit: cover;
+  display: inline-flex;
+}
+
+#side-bar > div > span {
+  white-space: nowrap;
+  background-color: aquamarine;
+  /* width: 100px; */
+  margin-left: 10px;
+}
+#week_and_right {
+  display: flex;
+  flex-grow: 1;
+}
+
+#weekend {
+  /* width: 700px; */
+  padding: 30px;
+  clear: left;
+  position: relative;
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 7;
+}
+
+#weekend > div {
+  flex-grow: 1;
   margin: 10px;
+  border: 1px solid black;
+  height: 400px;
+  display: flex;
 }
 
-.weekend div {
-  float: left;
+#weekend > div > div {
+  flex-direction: row;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 15px;
+  flex-grow: 7;
+  margin: 10px;
+  flex-direction: column;
   position: relative;
-  left: 10px;
-  margin: 1vw;
-  top: 10px;
-  width: 7vw;
-  height: 60vh;
-  background-color: brown;
+  text-align: center;
 }
-.weekend {
-  position: relative;
-  top: 5vh;
-  left: 5vw;
+#complete-member {
+  background-color: blueviolet;
+  height: 3em;
 }
-.right-menu {
-  /* margin-right: 5vw; */
-  background-color: antiquewhite;
-  float: left;
-  /* width: 20vw; */
-  overflow: hidden;
-  width: 20vw;
-  position: relative;
-  padding: 10px;
+
+#added-complete-member-button {
+  bottom: 0px;
 }
-.money {
-  position: relative;
-  height: 45vh;
-  overflow: hidden;
+#right-ui {
+  background-color: chartreuse;
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  flex-grow: 3;
+}
+
+#right-ui > * {
+  display: flex;
+  flex-grow: 1;
+}
+
+#money {
+  background-color: sandybrown;
+  flex-grow: 1;
+
+  display: table;
+  max-width: 300px;
+  /* min-width: 300px; */
+}
+#money-img {
+  display: table-cell;
+  vertical-align: middle;
   width: 100%;
-  display: block;
-  background-color: burlywood;
-}
-.ranking {
-  position: relative;
-  overflow: hidden;
-  height: 45vh;
-  width: 100%;
-  display: block;
-  background-color: bisque;
-}
-.main {
-  position: relative;
-  background-color: beige;
-  height: var(--main-height);
-  width: 70vw;
-  float: left;
-}
-:root {
-  --top-bar-height: 10vh;
-  --main-height: 90vh;
-}
-header {
-  margin: 0px;
-}
-* {
-  margin: 0px;
-  padding: 0px;
+  height: 100%;
+  background-image: url('../img/money_gif.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
-ul li {
-  list-style: none;
-}
-a {
-  text-decoration: none;
+#ranking {
+  flex-grow: 1;
+  background-color: seagreen;
 }
 
-a:visited {
-  color: black;
+.hidden {
+  display: none;
 }
