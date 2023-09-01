@@ -13,9 +13,12 @@ function 축소() {
   console.log('축소')
   spans.forEach((span) => {
     span.classList.add('hidden')
-    // span.style.color = 'black'
+    span.style.color = 'black'
   })
 }
 
+function hello()  {
+  alert('안녕하세요');
+}
 sidebar.addEventListener('mouseleave', 축소)
 sidebar.addEventListener('mouseenter', 확장)
