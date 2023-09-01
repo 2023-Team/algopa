@@ -6,14 +6,14 @@ function 확장() {
   console.log('확장')
   spans.forEach((span) => {
     span.classList.toggle('hidden')
-    span.style.color = 'pink'
+    // span.style.color = 'pink'
   })
 }
 function 축소() {
   console.log('축소')
   spans.forEach((span) => {
     span.classList.add('hidden')
-    span.style.color = 'black'
+    // span.style.color = 'black'
   })
 }
 

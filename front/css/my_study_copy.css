@@ -15,11 +15,12 @@ body {
 #top-bar {
   height: calc(var(--body-width-) * 0.06);
   width: var(--body-width-);
-  background-color: antiquewhite;
+  background-color: white;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-bottom: solid 2px gray;
 }
 #top-bar > div {
   /* clear: both; */
@@ -35,31 +36,43 @@ body {
   justify-content: space-between;
 }
 #top-menu {
-  background-color: lightblue;
+  background-color: white;
   margin-left: 20px;
+  font-size: 24px;
+}
+#logo {
+  font-size: 32px;
+  font-weight: bold;
+  /* background-color: ; */
 }
 #top-menu > div {
   display: inline;
-  background-color: blueviolet;
-  margin: 5px;
+  /* background-color: white; */
+  margin-left: 5px;
+  margin-right: 5px;
   vertical-align: middle;
-}
-#logo {
-  font-size: 24px;
+  /* font-size: 24px; */
 }
 #top-right {
-  /* display: flex; */
-  background-color: lightblue;
+  display: flex;
+  /* background-color: lightblue; */
   margin-right: 20px;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #top-right > div {
-  display: inline;
-  background-color: blueviolet;
+  /* display: inline; */
+  /* background-color: blueviolet; */
   margin: 5px;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+#top-right > div > div {
+  margin: 5px;
+}
 #login {
   font-size: 24px;
 }
@@ -70,11 +83,11 @@ body {
   float: left;
   width: 80px;
   height: 100%;
-  background-color: bisque;
+  background-color: #98cce3;
   transition: 0.5s;
   /* position: ; */
   position: relative;
-  height: calc(100vh - (var(--body-width-) * 0.06));
+  height: calc(100vh - (var(--body-width-) * 0.06) - 2px);
   flex-direction: column;
   display: flex;
 }
@@ -88,7 +101,7 @@ body {
   width: 60px;
   margin: 10px;
   height: 60px;
-  background-color: aqua;
+  /* background-color: aqua; */
   /* overflow: hidden; */
   display: flex;
   align-items: center;
@@ -102,9 +115,10 @@ body {
 
 #side-bar > div > span {
   white-space: nowrap;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   /* width: 100px; */
   margin-left: 10px;
+  font-size: 24px ;
 }
 #week_and_right {
   display: flex;
@@ -116,7 +130,7 @@ body {
   padding: 30px;
   clear: left;
   position: relative;
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -126,29 +140,47 @@ body {
 #weekend > div {
   flex-grow: 1;
   margin: 10px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 400px;
   display: flex;
 }
 
 #weekend > div > div {
-  flex-direction: row;
   display: flex;
-  border: 1px solid black;
-  border-radius: 15px;
+  outline: 2px solid #adadad;
+  /* border: 2px solid #adadad; */
+  border-radius: 10px;
   flex-grow: 7;
   margin: 10px;
   flex-direction: column;
   position: relative;
   text-align: center;
+  align-items: center;
 }
+#weekend > div > div > div:first-child {
+  /* margin: 20px; */
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  /* object-fit: fill; */
+  height: 60px;
+  width: 100%;
+  justify-content: center;
+  /* margin: 00auto; */
+  background-color: cornflowerblue;
+  border-radius: 8px;
+}
+
 #complete-member {
   background-color: blueviolet;
-  height: 3em;
+  /* height: 3em; */
+  margin: 10px auto;
+  font-size: 24px;
 }
 
 #added-complete-member-button {
   bottom: 0px;
+  font-size: 20px;
 }
 #right-ui {
   background-color: chartreuse;
@@ -161,6 +193,8 @@ body {
 #right-ui > * {
   display: flex;
   flex-grow: 1;
+  min-width: 100px;
+  flex-direction: column;
 }
 
 #money {
@@ -170,6 +204,8 @@ body {
   display: table;
   max-width: 300px;
   /* min-width: 300px; */
+  flex-shrink: 0;
+  flex-basis: 250px;
 }
 #money-img {
   display: table-cell;
@@ -180,13 +216,27 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  flex-grow: 1;
 }
 
 #ranking {
+  flex-basis: 250px;
+  flex-shrink: 0;
   flex-grow: 1;
   background-color: seagreen;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
 }
 
+#ranking-member {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+#ranking-member > * {
+  font-size: 30px;
+}
 .hidden {
   display: none;
 }
