@@ -1,37 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* 가로 가운데 정렬 */
+  align-items: center; /* 세로 가운데 정렬 */
+  min-height: 100vh; /* 뷰포트 높이를 최소 높이로 설정 */
+  min-width: 1000px;
+}
+
 .container {
-  display: grid;
-  grid-template-areas:
-    'header header header'
-    'menu main top'
-    'menu main aside'
-    'menu main bottom'
-    'footer footer footer';
+  display: flex;
+  flex-wrap: wrap; /* 요소들을 여러 줄로 나눔 */
+  justify-content: center; /* 가로 가운데 정렬 */
+  align-items: center; /* 세로 가운데 정렬 */
+  min-width: 1000px; /* 컨테이너의 최대 폭을 설정 (가로 스크롤을 방지하기 위함) */
+  max-width: 1000px;
 }
 
-.container div {
-  background-color: silver;
-  padding: 20px;
-  border: 1px solid black;
-}
-
-.header {
-  grid-area: header;
-}
-.menu {
-  grid-area: menu;
-}
-.main {
-  grid-area: main;
-}
-.top {
-  grid-area: top;
-}
-.aside {
-  grid-area: aside;
-}
-.bottom {
-  grid-area: bottom;
-}
-.footer {
-  grid-area: footer;
+.box {
+  width: 300px; /* 박스의 폭을 300px로 설정 */
+  height: 300px; /* 박스의 높이를 300px로 설정 (크기를 정사각형으로 유지) */
+  background-color: #f0f0f0; /* 박스의 배경색을 설정 (원하는 색상으로 변경) */
+  margin: 0 10px 10px 0; /* 박스 사이의 간격을 조절하고, 마지막 박스 아래 간격을 추가합니다. */
 }

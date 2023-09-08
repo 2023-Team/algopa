@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class AlgopaController {
-    @GetMapping("my_study_copy")
+    @GetMapping("my_study_submit")
     public String my_study_copy(){
-        return "my_study_copy";
+        return "my_study_submit";
     }
     @GetMapping("my_study")
     public String my_study(){
