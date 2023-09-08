@@ -1,0 +1,64 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.banner {
+    margin-top: 20px;
+    width: 1050px;
+    height: 300px;
+    white-space: nowrap;
+}
+
+.banner > div {
+    float: left; //logo와 text 가 나란히 정렬
+}
+
+#logo {
+    width: 300px;
+    height: 300px;
+    margin: 0px 50px 0px 100px;
+    position: relative;  //부모 요소
+    overflow: hidden;
+}
+
+#logo > img{
+    position: absolute; //자식 요소
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    white-space: nowrap;
+}
+
+.banner > #text {
+    font-size: 50px;
+    white-space: nowrap;
+    margin-top: 55px;
+}
+
+#text > div {
+    white-space: nowrap;
+}
+
+#al {
+    color: #98cce3;
+}
+#go {
+    color: #98cce3;
+    margin-left: 40px;
+}
+#pa {
+    color: #98cce3;
+    margin-left: 85px;
+}
+
+    color: #000;
+<<<<<<< HEAD
+    font-size: 22px;
+=======
+    font-size: 28px;
+>>>>>>> b66d0053a548b65f028e413c12348b174d26f2ae
+    text-align: left;
+    vertical-align : top;
+}
