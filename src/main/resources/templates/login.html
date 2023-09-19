@@ -3,21 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Algopa</title>
+    <link rel="stylesheet" href="./css/my_study_submit.css" />
+
     <title>Document</title>
-    <link rel="stylesheet" href="../static/css/login.css" />
+    <link rel="stylesheet" href="./css/login.css" />
   </head>
   <body>
     <body>
-      <div class="login-wrapper">
-        <h2>Login</h2>
-        <form method="post" action="서버의url" id="login-form">
-          <input type="text" name="userName" placeholder="Email" />
-          <input type="password" name="userPassword" placeholder="Password" />
-          <label for="remember-check">
-            <input type="checkbox" id="remember-check" />아이디 저장하기
-          </label>
-          <input type="submit" value="Login" />
-        </form>
+      <div id="all">
+        <div class="topbar">
+          <div class="topbar-left-menu">
+            <div id="logo">알고파</div>
+            <div id="home">홈</div>
+            <div id="my-study">내 스터디</div>
+            <div id="help">고객지원</div>
+            <div id="event">이벤트</div>
+          </div>
+          <div class="topbar-right-menu">
+            <div id="search-menu"><a href="">검색</a></div>
+            <div id="login-menu"><a href="">로그인</a></div>
+          </div>
+        </div>
+        <div id="main">
+          <div id="login-form">
+            <!-- 로그인 폼 -->
+            <div id="login-form-main-text">로그인</div>
+            <div id="user-type">
+              <div class="selected-user-type" id="general-user">일반회원</div>
+              <div class="" id="admin-user">관리자</div>
+            </div>
+            <!-- <div id="">id</div> -->
+            <div id="id-input-box">
+              <span>아이디</span>
+              <input type="text" placeholder="ID를 입력하세요" />
+            </div>
+            <!-- <div>pw</div> -->
+            <div id="pw-input-box">
+              <span>비밀번호</span>
+              <input type="password" placeholder="비밀번호를 입력하세요" />
+            </div>
+            <div id="sub-func">
+              <div id="save-id">
+                <input type="radio" id="save-id-button" />
+                <span>아이디 저장하기</span>
+              </div>
+              <div id="find-pw">비번찾기</div>
+            </div>
+            <button id="login-button">로그인</button>
+            <!-- <div id="login-button">
+              <button id="login-button">로그인</button>
+            </div> -->
+            <div id="sign-up"><a href="">아직 회원이 아냐?</a></div>
+          </div>
+        </div>
       </div>
     </body>
   </body>

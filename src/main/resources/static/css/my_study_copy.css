@@ -161,8 +161,9 @@ body {
   align-items: center;
 }
 #weekend > div > div > div:first-child {
+  /*주간 날짜*/
   /* margin: 20px; */
-  font-size: 30px;
+  font-size: 20px;
   display: flex;
   align-items: center;
   /* object-fit: fill; */
@@ -211,13 +212,13 @@ body {
 #money {
   background-color: sandybrown;
   flex-grow: 1;
-
   display: table;
   max-width: 300px;
   /* min-width: 300px; */
   flex-shrink: 0;
   flex-basis: 250px;
 }
+
 #money-img {
   display: table-cell;
   vertical-align: middle;
@@ -238,24 +239,37 @@ body {
   flex-direction: column;
   text-align: center;
   overflow: hidden;
+  justify-content: center;
+  align-items: center;
 }
 
+#ranking-member-box{
+
+  padding: 10px;
+  outline: 2px solid black;
+  /*border: 1px solid black;*/
+  background-color:#6a24fe;
+  border-radius: 5px;
+  height: 70%;
+  width: 70%;
+}
 #ranking-member {
   display: flex;
   justify-content: center;
   margin: 10px;
   align-items: center;
 }
-#ranking-member > div {
+#ranking-member > >div >div {
    float: left;
 }
 #ranking-member > * {
-  font-size: 30px;
+  font-size: 20px;
 }
 
+
 #place {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   margin-right: 15px;
 }
 #place > img {

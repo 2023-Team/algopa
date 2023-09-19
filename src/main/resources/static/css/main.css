@@ -1,12 +1,9 @@
 .topbar {
-  height: calc(var(--body-width-) * 0.06);
-  width: var(--body-width-);
-  background-color: white;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-bottom: solid 2px gray;
+  font-size: 30px;
+  color: blue;
+  padding: 8px;
+  /* text-align: center; */
+  flex: auto;
 }
 a {
   text-decoration-line: none;
@@ -48,3 +45,4 @@ body {
 .hidden {
   display: none;
 }
+
