@@ -52,10 +52,6 @@
     color: #98cce3;
     margin-left: 85px;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> b66d0053a548b65f028e413c12348b174d26f2ae
 /* 하단배너 */
 .box-container {
     width: auto;
@@ -81,11 +77,7 @@
     justify-content: space-around;
 
     color: #000;
-<<<<<<< HEAD
     font-size: 22px;
-=======
-    font-size: 28px;
->>>>>>> b66d0053a548b65f028e413c12348b174d26f2ae
     text-align: left;
     vertical-align : top;
 }
