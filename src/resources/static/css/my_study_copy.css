@@ -224,7 +224,7 @@ body {
   vertical-align: middle;
   width: 100%;
   height: 100%;
-  background-image: url('../img/money_gif.gif');
+  background-image: url('money_gif.gif');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
