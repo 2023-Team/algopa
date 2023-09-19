@@ -29,29 +29,31 @@
         <div id="main">
           <div id="login-form">
             <!-- 로그인 폼 -->
-            <div id="login-form-main-text">로그인</div>
-            <div id="user-type">
-              <div class="selected-user-type" id="general-user">일반회원</div>
-              <div class="" id="admin-user">관리자</div>
-            </div>
-            <!-- <div id="">id</div> -->
-            <div id="id-input-box">
-              <span>아이디</span>
-              <input type="text" placeholder="ID를 입력하세요" />
-            </div>
-            <!-- <div>pw</div> -->
-            <div id="pw-input-box">
-              <span>비밀번호</span>
-              <input type="password" placeholder="비밀번호를 입력하세요" />
-            </div>
-            <div id="sub-func">
-              <div id="save-id">
-                <input type="radio" id="save-id-button" />
-                <span>아이디 저장하기</span>
+            <form action="/save" method="POST">
+              <div id="login-form-main-text">로그인</div>
+              <div id="user-type">
+                <div class="selected-user-type" id="general-user">일반회원</div>
+                <div class="" id="admin-user">관리자</div>
               </div>
-              <div id="find-pw">비번찾기</div>
-            </div>
-            <button id="login-button">로그인</button>
+              <!-- <div id="">id</div> -->
+              <div id="id-input-box">
+                <span>아이디</span>
+                <input type="text" placeholder="ID를 입력하세요" name="login_id"/>
+              </div>
+              <!-- <div>pw</div> -->
+              <div id="pw-input-box">
+                <span>비밀번호</span>
+                <input type="password" placeholder="비밀번호를 입력하세요" name="password"/>
+              </div>
+              <div id="sub-func">
+                <div id="save-id">
+                  <input type="radio" id="save-id-button" />
+                  <span>아이디 저장하기</span>
+                </div>
+                <div id="find-pw">비번찾기</div>
+              </div>
+              <input type="submit" id="login-button" value="로그인">
+            </form>
             <!-- <div id="login-button">
               <button id="login-button">로그인</button>
             </div> -->
